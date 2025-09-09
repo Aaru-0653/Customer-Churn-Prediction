@@ -1,0 +1,113 @@
+/* Background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("/static/tele3.webp") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  backdrop-filter: blur(6px);
+}
+
+/* Glass container (default - merged into background) */
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  /* very transparent */
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: none;
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(31, 94, 126, 0.1);
+  width: 95%;
+  max-width: 1400px;
+  margin-top: 90px;
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(20, 20, 255, 0.1);
+  opacity: 1;
+  box-shadow: 0 4px 20px rgba(19, 9, 150, 0.2);
+}
+
+.container:hover {
+  box-shadow: 0 4px 20px rgba(19, 9, 150, 0.2);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, #df2626, #1d37ca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Form grid */
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #04415c;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Inputs & selects */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 80, 155, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+  color: #04415c;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Active (when you tap/click) */
+.form-group input:focus,
+.form-group select:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #00d4ff;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.7);
+  transform: scale(1.02);
+}
+
+/* Button */
+.form-submit {
+  text-align: center;
+}
+
+button {
+  padding: 14px 25px;
+  margin-left: 12px;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  background: linear-gradient(135deg, #938cf7, #dd0c0c);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #dd0c0c, #938cf7);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.4);
+}

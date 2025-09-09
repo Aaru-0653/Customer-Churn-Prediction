@@ -1,0 +1,84 @@
+/* Background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url("/static/tele3.webp") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  backdrop-filter: blur(6px);
+}
+
+/* Glass container */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+  color: #fff;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #df2626, #1d37ca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Result box */
+.result-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 25px;
+  animation: pop 0.6s ease-in-out;
+}
+
+.result-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #08066e;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Buttons */
+.actions .back-btn {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1509bb, #dd0c0c);
+  color: #cecedb;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.actions .back-btn:hover {
+  background: linear-gradient(135deg, #dd0c0c, #180ead);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
