@@ -74,10 +74,12 @@ http://127.0.0.1:5000/
 
 📸 Screenshots
 🏠 Input Form
+<img width="1294" height="615" alt="Screenshot 2025-09-09 152742" src="https://github.com/user-attachments/assets/d7df9d63-43ec-4d70-8268-0af6651b1505" />
 
-(Add screenshot here)
+
 
 📊 Prediction Result
 
-(Add screenshot here)
+<img width="1287" height="611" alt="Screenshot 2025-09-09 152810" src="https://github.com/user-attachments/assets/724e0789-0b5c-4e20-969b-0fc590e8606a" />
+
 
